@@ -13,7 +13,7 @@
         .container{
             height: 100vh;
             width: 100;
-            background-image: url("https://source.unsplash.com/random/720x600/?coding,website,python");
+            background-image: url("https://source.unsplash.com/random/?simple");
             background-position: center;
             background-size: cover;
             padding-left: 5%;
@@ -21,12 +21,111 @@
             box-sizing: border-box;
             position: relative;
         }
+
+        .navbar{
+            width: 100%;
+            height: 15vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo{
+            width: 160px;
+            cursor: pointer;
+        }
+
+        .icon{
+            width: 40px;
+            cursor: pointer;
+        }
+
+        nav{
+            flex:1;
+            padding-left: 60px;
+        }
+
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 0px 20px;
+
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: #333;
+        }
+
+        .content h1{
+            font-size: 60px;
+            font-weight: 100;
+            margin-top: 24px;
+            margin-bottom: 15px;
+            color: #232d60;
+        }
+
+        .content p{
+            font-size: 20px;
+            color: #6a7199;
+
+        }
+
+        .content{
+            margin-left: 10%;
+            margin-top: 10%;
+        }
+
+        .content .btn{
+            display: inline-block;
+            background: linear-gradient(45deg, #87adfe, #ff77cd);
+            border-radius: 6px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: #fff;
+            box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+
+        }
+
+        .arrow-icons{
+            margin-top: 40px;
+            display: flex;
+
+        }
+
+        .arrow-icons img{
+            width: 40px;
+            margin-right: 25px;
+        }
     </style> 
     <title>My Portfolio Web</title>
 </head>
 <body>
     <div class="container">
+        <div class="navbar">
+            <img src="" alt="logo">
+            <nav>
+                <ul> 
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="" alt="icon">
+        </div>
+        <div class="content">
+            <a href="" class="btn">Lorem</a>
+            <h1>You should <br> always feel</h1>
+            <p>Clothes that are sure</p>
+            
+            <div class="arrow-icons">
+                <img src="">
+                <img src="">
 
+            </div>
+        </div>
     </div>
 </body>
 </html>

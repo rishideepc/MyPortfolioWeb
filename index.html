@@ -13,7 +13,7 @@
         .container{
             height: 100vh;
             width: 100;
-            background-image: url("https://source.unsplash.com/random/?simple");
+            background-image: url(Images/background-image.jpg);
             background-position: center;
             background-size: cover;
             padding-left: 5%;
@@ -98,34 +98,67 @@
             width: 40px;
             margin-right: 25px;
         }
+
+        .feature-img{
+            height: 90%;
+            position: absolute;
+            bottom: 0;
+            right: 160px;
+        }
+
+        .social-links{
+            transform: rotate(-90deg);
+            position: absolute;
+            left: -80px;
+            bottom: 180px;
+        }
+
+        .social-links a{
+            text-decoration: none;
+            color: #6a7199;
+            padding-right: 20px;
+            font-size: 14px;
+        }
     </style> 
     <title>My Portfolio Web</title>
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <img src="" alt="logo">
-            <nav>
-                <ul> 
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-            <img src="" alt="icon">
-        </div>
-        <div class="content">
-            <a href="" class="btn">Lorem</a>
-            <h1>You should <br> always feel</h1>
-            <p>Clothes that are sure</p>
-            
-            <div class="arrow-icons">
-                <img src="">
-                <img src="">
+    <section>
+        <div class="container">
+            <div class="navbar">
+                <img src="" alt="logo">
+                <nav>
+                    <ul> 
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="" alt="icon">
+            </div>
+            <div class="content">
+                <a href="" class="btn">Lorem</a>
+                <h1>You should <br> always feel</h1>
+                <p>Clothes that are sure</p>
+                
+                <div class="arrow-icons">
+                    <img src="">
+                    <img src="">
+
+                </div>
+            </div>
+
+            <img src="" class="feature-img">
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/rishideep-chatterjee-5155491ba/">LinkedIn</a>
+                <a href="https://www.instagram.com/rishideep117/" target="_blank">Instagram</a>
+                <a href="">Facebook</a>
+
 
             </div>
         </div>
-    </div>
+    </section>
 </body>
 </html>

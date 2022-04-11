@@ -11,7 +11,7 @@ html{
 
 .footer{
     display: flex;
-    justify-content:left;
+    justify-content:center;
     padding: 20px;
     background-color: black;
     /* color: #000000dc; */
@@ -226,8 +226,11 @@ transform: translateY(-10px);
 #about{
     display: flex;
     flex-direction: column;
-    height: 600px;
+    text-align: justify;
+    /* height: 600px; */
     background: url('Images/background-image3.jpg') no-repeat center center/cover;
+    /* align-items: center; */
+    height: 100%;
     /* background-color: rgba(0, 0, 0, 0.5); */
     /* background: url("Images/background-image.jpg") no-repeat center center/cover; */
     
@@ -247,6 +250,8 @@ transform: translateY(-10px);
 .about{
     padding: 20px;
     display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .about img{
@@ -325,7 +330,7 @@ transform: translateY(-10px);
 #submit{
     padding: 15px 20px;
     margin: 30px;
-    width: 15%;
+    width: 20%;
     border-radius: 20px;
     background-color: #000000dc;
     color: white;

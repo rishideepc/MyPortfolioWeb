@@ -1,0 +1,67 @@
+.navbar ul{
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+.heading{
+     font-size: 1.8rem;
+}
+
+.projects{
+    justify-content: center;
+}
+
+.projects div{
+    justify-content: center;    
+}
+
+.gallery{
+    flex-wrap: wrap;
+}
+
+.gallery img{
+    width: 270px;
+    height: 360px;
+    
+}
+
+.about{
+    flex-direction: column;
+}
+
+.about h2{
+    text-align: center;
+}
+
+.about img{
+    padding: 0px 15px;
+    width: 250px;
+    height: 150px;
+}
+
+#message{
+    width: 40%;
+    height: 200px;
+}
+
+.box{
+    height: 150px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.box h2{
+    color: gray;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.box p{
+    color: black;
+    font-size: .8rem;
+}

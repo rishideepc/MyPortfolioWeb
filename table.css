@@ -22,3 +22,21 @@
     /* color: black; */
     font-size: 1rem;
 }
+
+.about img{
+    padding: 0px 20px;
+    width: 400px;
+    height: 300px;
+}
+
+.name{
+    padding: 5px;
+}
+
+.name{
+    font-size: 1.7rem;
+}
+
+.name p{
+    font-size: 1rem;
+}

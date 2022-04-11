@@ -4,87 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortfolioWeb</title>
-    <style>
-        *{
-            margin: 0%;
-            padding: 0%;
-        }
-
-        .navbar{
-            display: flex;
-            justify-content: center;
-            height: 50px;
-            align-items: center;
-            position: relative;
-        }
-
-        .navbar::before{
-            content: "";
-            position:absolute;
-            background-color: rgba(0, 0, 0, 0.5);
-            height: 100%;
-            width: 100%;
-            z-index: -1;
-        }
-
-        .navbar ul{
-            display: flex;
-            list-style: none;
-        }
-
-        .navbar ul li{
-            font-size: 1.1rem;
-        }
-
-        .navbar ul li a{
-            padding: 5px 20px;
-            text-decoration: none;
-            color: white;
-        }
-
-        .navbar ul li a:hover{
-            border-bottom: 2px solid yellow;
-        }
-
-        #home{
-            display: flex;
-            flex-direction: column;
-            height: 650px;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        #home::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: url('') no-repeat center center/cover;
-            height: 700px;
-            width: 100%;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="table.css">
+    <title>PortfolioWeb</title> 
 </head>
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Me</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#portfolio">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <section id="home">
-        <h1 class="heading">HI, I AM</h1>
+        <h1 class="heading">HEY, I AM</h1>
         <h1 class="heading">RISHIDEEP CHATTERJEE</h1>
-        <p>AND THIS IS MY PORTFOLIO WEBSITE</p>
+        <br><br>
+        <p>WELCOME TO MY WEB PORTFOLIO</p>
 
     </section>
 
+    <section id="about">
+        <h1 class="heading">About Me</h1>
+        <div class="about">
+            <img src="Images/self-image.jpeg" alt="pic">
+            <div class="name">
+                <h2>Hello, I'm Rishideep!</h2>
+                <p>A developer, an ML enthusiast, and a Computer Science sophomore at RCC Institute of Information Technology, Kolkata.
+                    I completed my schooling from Delhi Public School Ruby Park, Kolkata. My journey into the world of technology began with the C++ programming language. Currently, I have experience in working with Python, C, and basic front-end frameworks as well. My interests include Computer Vision and Image Processing. I have built a few OpenCv project that you may find below.
+                </p>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="heading">Projects</h1>
+        <div class="columns">
+            
+
+            <div class="box">
+                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif; color: gray;">The</h3>
+                <h2>Mind-Buddy Bot</h2>
+                <p>MIND BUDDY bot a personal chatbot made for telegram users around the world that would always be there to listen to you, even in your darkest hour!</p>
+                <br>
+                <a id="codelink" href="" target="_blank" style="font-size: large; color: gray; font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">Github -></a>
+                
+
+            </div>
+
+            <div class="box">
+                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif; color: gray;">Gesture</h3>
+                <h2>Volume Control</h2>
+                <p>No-contact is the new normal. This technology allows users to control their device volumes, with just hand gestures, absolutely touch-free!</p>
+                <br><br>
+                <a id="codelink" href="" target="_blank" style="font-size: large; color: gray; font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">Demo -></a>
+                
+
+            </div>
+            
+            <div class="box">
+                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif; color: gray;">Gesture</h3>
+                <h2>Screenshot</h2>
+                <p>A variant of the original volume-control module, this code helps the user to take screenshots on their devices, by closing their fists, in front of the camera!</p>
+                <br>
+                <a id="codelink" href="" target="_blank" style="font-size: large; color: gray; font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">Demo -></a>
+                
+
+            </div><div class="box">
+                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif; color: gray;">Voice-Controlled</h3>
+                <h2>Virtual Assistant</h2>
+                <p>A basic desktop assistant covering a wide range of commands, from sending texts to creating personal browsers, from wake-up alarms to customized setups.</p>
+                <br>
+                <a id="codelink" href="" target="_blank" style="font-size: large; color: gray; font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">Github -></a>
+                
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio">
+        <h1 class="heading">Gallery & Links</h1>
+        <div class="gallery" style="font-family: Georgia, 'Times New Roman', Times, serif; color: black; font-weight: bolder; align-items: center;">
+            
+            <p><img src="Images/ai_vir.jpg" alt=""><button id="btn">Virtual Assistant</button></p>
+            <p><img src="Images/hand_track.jpg" alt=""><button id="btn">Gesture Voice Control</button></p>
+            <p><img src="Images/screenshot.png" alt=""><button id="btn">Gesture Screenshot</button></p>
+            <p><a href="https://mindbuddy.netlify.app/" target="_blank"><img src="Images/mind buddy.jpg" alt=""></a><button id="btn">Mind-Buddy Bot</button></p>
+        </div>
+    </section>
+
+    
+    
+
+    <section id="contact">
+        <h1 class="heading">Contact Me</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="message" id="message" cols="70" rows="20" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="Submit" id="submit">
+
+
+
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="copyright">
+          <p>© 2022 Rishideep Chatterjee</p>
+        </div>
+      </footer>
 
 </body>
 </html>
